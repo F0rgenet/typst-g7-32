@@ -1,8 +1,8 @@
 name: Build and Release Typst Document
 on:
   push:
-    tags:
-      - 'v*'
+    tags:  
+      - '**'
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add preview/latest.pdf
+          git add -f preview/latest.pdf
           git commit -m "Update preview PDF" || echo "No changes to commit"
           git push
 
