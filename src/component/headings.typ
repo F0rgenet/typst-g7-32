@@ -12,7 +12,7 @@
   
   // TODO: Проверять дубликаты сервисных заголовков и выдавать предупреждение: context query(heading).filter(value => {value.body in service_headings})
   
-  set heading(numbering: "1.1.")
+  set heading(numbering: "1.1")
 
   show heading: it => {
     set text(size: text_size)
